@@ -1,0 +1,74 @@
+/* Resetting default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+html,
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Add in your own customisations */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2em;
+}
+
+header,
+footer {
+  background-color: #93d0f4;
+  text-align: center;
+  color: #fff;
+}
+
+header {
+  padding: 1.2em;
+}
+
+header h1 {
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+/*Use the correct CSS property to create a padding of 10px for all cells of the table*/
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+a {
+  color: #0079c1;
+  text-decoration: none;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+/*Use the correct CSS property to create a padding of 10px at the top and bottom of the footer*/
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
