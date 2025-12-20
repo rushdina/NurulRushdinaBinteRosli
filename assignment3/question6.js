@@ -9,18 +9,22 @@ const disneyData = {
 // Write your code below
 // Question 6: Decision Structures ll
 
-if (disneyData.close > disneyData.open) {
-  if (disneyData.volume > 100000) {
+const close = parseFloat(disneyData.close);
+const open = parseFloat(disneyData.open);
+const volume = parseFloat(disneyData.volume);
+
+if (close > open) {
+  if (volume > 100000) {
     console.log("Strong Bullish");
   } else {
     console.log("Bullish");
   }
-} else if (disneyData.close < disneyData.open) {
-  if (disneyData.volume > 10000) {
+} else if (close < open) {
+  if (volume > 10000) {
     console.log("Strong Bearish");
   } else {
     console.log("Bearish");
   }
-} else if (disneyData.close === disneyData.open) {
+} else if (close === open) {
   console.log("Neutral");
 }
